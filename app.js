@@ -42,16 +42,17 @@ function restartGame(){
   boxes.forEach((box)=>box.innerHTML="");
   boxes.forEach((box)=>box.removeEventListener("click", boxClick));
   boxes.forEach((box)=>box.addEventListener("click", boxClick));
+  
  
   
   gameOver.className = "hidden";
 
 
-  console.log(gameState, "hahahahahah")
+
 }}
 
 
-const lineThru = document.getElementsByClassName("lineThru");
+
 
 
 
@@ -60,7 +61,7 @@ boxes.forEach((box)=>box.addEventListener("click", boxClick));
 
 
 function boxClick(event){
-  console.log(event.target.id," clicky")
+  
   if(gameOver.classList.contains('visible')){
     return;
   }
@@ -72,13 +73,13 @@ function boxClick(event){
   if(turn === playerX){
     box.innerText = playerX;
     gameState[id - 1] = playerX;
-    console.log(gameState, "gamestate")
+
     turn = playerO;
   }
   else{
     box.innerText = playerO;
    gameState[id - 1] = playerO;
-   console.log(gameState, "gamestate")
+   
     turn = playerX;
   }
   

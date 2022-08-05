@@ -9,17 +9,18 @@
 </head>
    <header>
     <h1>TIC TAC TOE!</h1>
-
-         <div id="playerXlabel" class="playerNames">Player X's name here
+<h3>Player X</h3>
+         <div id="playerXlabel" class="playerNames">
        <form id="playerXinputform" class="playerNames">
-        <input id="playerXinput" class="playerNames"></input>
+        <input id="playerXinput" class="playerNames" ></input>
         
     </form>
+    
    </div>
-   
-   <div id="playerOlabel" class="playerNames">Player O's name here
+   <h3>Player O</h3>
+   <div id="playerOlabel" class="playerNames">
     <form id="playerOinputform" class="playerNames">
-     <input id="playerOinput" class="playerNames"></input>
+     <input id="playerOinput" class="playerNames" placeholder="Computer"></input>
      
  </form>
 </div>
@@ -28,7 +29,10 @@
 
 
     <body>
-      
+        <div id="gameOver" class="hidden">
+            <h2 id ="gameOverText">X Wins</h2>
+            <button id="playAgain">Play Again?</button>
+        </div>
        
             <div id = "board">
                 <div id="1" class="box border"></div>
@@ -43,10 +47,7 @@
                 
             </div>
 
-            <div id="gameOver" class="hidden">
-                <h2 id ="gameOverText">X Wins</h2>
-                <button id="playAgain">Play Again?</button>
-            </div>
+          
 
         
         
